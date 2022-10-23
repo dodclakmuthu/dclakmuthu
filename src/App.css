@@ -1,38 +1,114 @@
 .App {
-  text-align: center;
+  background-color: var(--background);
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.home-wrapper{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(205,205,205);
+  background: linear-gradient(90deg, rgba(205,205,205,1) 0%, rgba(207,207,207,1) 23%, rgba(232,232,232,1) 95%);
+  overflow: hidden;
+}
+
+.notifications-wrapper{
+  position: fixed;
+  top:10px;
+  left: 50%;
+  z-index: 5000;
+}
+
+/* background animation */
+.box div{
+  position: absolute;
+  width:60px;
+  height: 60px;
+  background: transparent;
+  border: 2px solid rgba(62, 63, 59, 0.3);
+  border-radius: 40%;
+}
+
+.box div:nth-child(1) {
+  top:90%;
+  left:92%;
+  animation: animate 5s linear infinite;
+}
+
+.box div:nth-child(2) {
+  top:95%;
+  left: 82%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(3) {
+  top:80%;
+  left: 72%;
+  animation: animate 8s linear infinite;
+}
+
+.box div:nth-child(4) {
+  top:98%;
+  left: 62%;
+  animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(5) {
+  top:88%;
+  left: 52%;
+  animation: animate 14s linear infinite;
+}
+
+.box div:nth-child(6) {
+  top:78%;
+  left: 42%;
+  animation: animate 18s linear infinite;
+}
+
+.box div:nth-child(7) {
+  top:92%;
+  left: 32%;
+  animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8) {
+  top:82%;
+  left: 22%;
+  animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(9) {
+  top:95%;
+  left: 12%;
+  animation: animate 35s linear infinite;
+}
+
+.box div:nth-child(10) {
+  top:65%;
+  left: 2%;
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 0;
+  }
+  50%{
+    transform: scale(0.5) translateY(-140) translateX(-40px) rotate(-180deg);
+    opacity: 0.5;
+  }
+  100%{
+    transform: scale(1.1) translateY(-280px) translateX(80px) rotate(360deg);
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* background animation */

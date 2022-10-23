@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.side-bar{
+  width: 20vw;
+  height: 100vh;
+  background-color: rgb(205,205,205);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  padding:10px;
+}
+
+.side-bar li{
+  list-style: none;
+  text-decoration: none;
+}
+
+.side-bar li a{
+    padding: 10px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: var(--text-color);
+  display: block;
+}
+
+.slide-active{
+  background-color: var(--text-color);  
+  color: var(--background);
+}
+
+.side-bar li:hover{
+  background-color: var(--text-color);  
+  color: var(--background);
+}
+
+.side-bar li:hover a{
+  color: var(--background);
+}

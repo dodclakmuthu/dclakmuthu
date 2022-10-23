@@ -1,0 +1,54 @@
+#uploader-input{
+  display: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image{
+  position: absolute;
+  width: 120px;
+  min-height: 120px;
+  max-height: auto;
+  float: left;
+}
+
+.mask{
+  position: absolute;
+  top:0;
+  width: 120px;
+  min-height: 120px;
+  max-height: auto;
+  border-radius: 5px;
+}
+
+.image svg{
+  display: none;
+}
+
+.image:hover .mask{
+  background-color: rgba(62, 63, 59, 0.5);
+}
+
+.image:hover .x-icon{
+  color: antiquewhite;
+}
+
+.image:hover svg{
+  display: block;
+}
+
+.image .x-icon{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+
+h5{
+  font-family: 'Open Sans', sans-serif;
+  padding: 3px;
+}

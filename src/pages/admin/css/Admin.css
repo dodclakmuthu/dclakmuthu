@@ -1,0 +1,17 @@
+.admin-content{
+  position: fixed;
+  left:20vw;
+  top:0;
+  width: 80vw;
+}
+
+
+.ahome-top-bar{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.ahome-top-bar>* {
+  margin: 10px;
+}
